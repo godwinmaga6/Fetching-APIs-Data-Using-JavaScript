@@ -25,4 +25,9 @@ fetch('https://picsum.photos/600/400').then((res) => res.blob().then((blob) => {
     img.src = URL.createObjectURL(blob);
     document.querySelector('body').appendChild(img);
 }))
-// (2)  Using fetch method...
+// (2)  Using the Async  method...
+// API we are fetching blog post from is "jsonplacehonder.typicode.com"
+// This API returns a 100 posts upon request. Visit jsonplaceholder.typicode.com for more info
+//This is a Free Fake API for testing and prototyping. Powered by JSON Server + LowDB
+
+//NOTE: we can choose to get any amount of post ranging from one to hundred if we like. This requires a loop function 
